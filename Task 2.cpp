@@ -14,6 +14,7 @@ public:
 		cout << "Enter the values in the list(-1 to stop).";
 		cin >> values;
 
+
 		while (values != -1) {
 			myList.push_back(values);
 			cin >> values;
@@ -23,11 +24,11 @@ public:
 
 	void display()
 	{
-		cout << "The list is: ";
+		cout << "The list is: changes done" << endl << " \n\n ";
 		for (int n : myList) {
 			cout << n << " ";
 		}
-		
+
 	}
 
 	void sort() {
@@ -52,7 +53,7 @@ public:
 			}
 		}
 	}*/
-	
+
 	/*void merge(Lists A, Lists B) {
 			int a = distance(A.myList.begin(), A.myList.end());
 					int b = distance(B.myList.begin(), B.myList.end());
@@ -69,7 +70,7 @@ public:
 
 
 int main() {
-	Lists A,B,D;
+	Lists A, B, D;
 	A.append();
 	A.display();
 	A.sort();
